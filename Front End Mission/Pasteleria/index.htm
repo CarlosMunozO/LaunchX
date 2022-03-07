@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicieuse Pastelería</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: pink;
+        }
+	  h2 {
+		font-family: Brush Script MT, cursive;
+	  }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 30%;
+            height: 600px;
+            /* only for demonstration, should be removed */
+            background: #fde4d9;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #ebdfd6;
+            height: 600px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Délicieuse Pastelería</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a>Ingredientes disponibles:</a></li><br>
+                <li><a>Tipo de pan:</a></li>
+                <li><a>&emsp;3 leches</a></li>
+                <li><a>&emsp;Crepa</a></li>
+                <li><a>&emsp;Pan vainilla</a></li>
+                <li><a>&emsp;Pan chocolate</a></li><br>
+                <li><a>Rellenos:</a></li>
+                <li><a>&emsp;Fresa</a></li>
+                <li><a>&emsp;Durazno</a></li>
+                <li><a>&emsp;Nutella</a></li>
+                <li><a>&emsp;Mora azul</a></li><br>
+                <li><a>Cubierta:</a></li>
+                <li><a>&emsp;Fondant</a></li>
+                <li><a>&emsp;Merengue</a></li>
+                <li><a>&emsp;Chantilly</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>¡Platícanos sobre tí y tu pastel ideal!</h1>
+            <form action="/accion.js" id="form1" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <label for="nombre">Teléfono:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <label for="nombre">Correo Electrónico:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <label for="nombre">¿Para cuántas personas será el pastel?:</label>
+        <input type="number" id="numero1" name="numero1"><br><br>
+        <label for="nombre">Fecha de tu evento:</label>
+        <input type="date" id="fecha1" name="fecha1"><br><br>
+        <label for="nombre">Platícanos como te gustaría tu pastel:</label>
+        <input type="text" style="WIDTH: 800px; HEIGHT: 250px" id="nombre" name="nombre"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+        </article>
+    </section>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+
+</body>
+
+</html>
